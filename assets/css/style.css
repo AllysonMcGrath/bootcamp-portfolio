@@ -1,8 +1,9 @@
 :root {
     --primary-color: #FFFFFF;
-    --secondary-color: #00AEEF;
-    --tertiary-color: #EC008C;
-    --quaternary-color: #ffff00;
+    --secondary-color: #60adc9;
+    --tertiary-color: hsl(202, 67%, 34%);
+    --quaternary-color: #eb7bcf;
+    --quinary-color: rgb(233, 233, 233);
 }
 
 * {
@@ -19,13 +20,12 @@ body {
 /*header*/
 
 header {
-    padding: 20px 35px;
+    padding: 15px 35px;
     background-color:var(--secondary-color);
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
     z-index: 9999;
 }
@@ -33,8 +33,9 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--primary-color);
-    margin: 0;
+    color: var(--quinary-color);
+    background-color: var(--tertiary-color);
+
 }
 
 header a {
@@ -53,9 +54,18 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li {
+    padding: 0px 5px;
+}
+
 header nav ul li a {
     padding: 10px 15px;
     font-size: 1.55vw;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: var(--tertiary-color);
 }
 
 /*end header*/
@@ -67,7 +77,114 @@ header nav ul li a {
 
 
 /*main content*/
+#about-me {
+    display: flex;
+    padding: 10px 15px 20px 15px;
+    width: 100%;
+}
 
+#about-me-info {
+    display: flex;
+    height: auto;
+    padding: 0px 30px;
+    margin: 0px 
+}
+
+#about-me-info img {
+    display: flex;
+    max-width: 15%;
+    height: auto;
+} 
+
+.main-content {
+    margin: 0px 20px;
+}
+.main-content h2 {
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 26px;
+    border-right: 2px solid var(--quaternary-color);
+    padding: 0px 10px 0px 50px;
+}
+
+#about-me p {
+    padding: 0px 10px;
+    width: 80%;
+}
+
+#my-work {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.work-examples {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+
+#latest-work p {
+    background-color: var(--quaternary-color);
+    padding: 5px 5px;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+}
+#latest-work {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+#latest-work img {
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+}
+
+.work-examples img {
+    filter: brightness(50%);
+}
+
+.work-examples img:hover {
+    box-shadow: 0 0 11px #60adc9;
+    filter: brightness(100%);
+}
+
+#earlier-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#earlier-work p {
+    background-color: var(--quaternary-color);
+    padding: 5px 5px;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+}
+
+.earlier-work-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+}
+
+#earlier-work img {
+    width: 100%;
+    padding: 5px 5px;
+}
 /*end main content*/
 
 
