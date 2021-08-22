@@ -5,20 +5,20 @@
     --quaternary-color: #eb7bcf;
     --quinary-color: rgb(233, 233, 233);
 }
-
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
     background-color: var(--primary-color);
 }
-
-
+ 
+ 
 /*header*/
-
+ 
 header {
     padding: 15px 35px;
     background-color:var(--secondary-color);
@@ -29,24 +29,24 @@ header {
     top: 0;
     z-index: 9999;
 }
-
+ 
 header h1 {
     font-weight: bold;
     font-size: 36px;
     color: var(--quinary-color);
     background-color: var(--tertiary-color);
     padding: 0px 10px;
-
+ 
 }
-
+ 
 header a {
     color: var(--primary-color);
 }
-
+ 
 header nav {
     margin: 7px 0;
 }
-
+ 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -54,24 +54,24 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
-
+ 
 header nav ul li {
     padding: 0px 5px;
 }
-
+ 
 header nav ul li a {
     padding: 10px 15px;
     font-size: 1.55vw;
     text-decoration: none;
 }
-
+ 
 header nav ul li a:hover {
     background-color: var(--tertiary-color);
 }
-
+ 
 /*end header*/
-
-
+ 
+ 
 /*hero*/
 #hero {
     background-image: url("../images/hero3.png");
@@ -80,42 +80,21 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
-
+ 
 }
-
+ 
 #hero-text {
-    background-color: var(--secondary-color);
+    background-color: var(--quaternary-color);
     padding: 10px 10px;
     position: absolute;
     right: 15px;
     bottom: 15px;
 }
 /*end hero*/
-
-
+ 
+ 
 /*main content*/
-#about-me {
-    display: flex;
-    padding: 10px 15px 20px 15px;
-    width: 100%;
-}
-
-#about-me-info {
-    display: flex;
-    height: auto;
-    padding: 0px 30px;
-    margin: 0px 
-}
-
-#about-me-info img {
-    display: flex;
-    max-width: 15%;
-    height: auto;
-} 
-
-.main-content {
-    margin: 0px 20px;
-}
+ 
 .main-content h2 {
     color: var(--tertiary-color);
     display: flex;
@@ -123,24 +102,46 @@ header nav ul li a:hover {
     font-size: 26px;
     border-right: 2px solid var(--quaternary-color);
     padding: 0px 10px 0px 50px;
+    text-align: end;
+    width: 100%;
+    height: 100%;
 }
-
+ 
+#about-me {
+    display: flex;
+    padding: 10px 15px 20px 15px;
+}
+ 
+#about-me-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 0px 30px;
+    width: 100%;
+}
+ 
+#about-me-info img {
+    max-width: 15%;
+    height: auto;
+    min-width: 100px;
+} 
+ 
 #about-me p {
-    padding: 0px 10px;
+    padding: 0px 30px 0 15px;
     width: 80%;
 }
-
+ 
 #my-work {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 15px 20px 15px;
 }
-
+ 
 .work-examples {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 30px;
+    width: 100%;
 }
-
+ 
 #latest-work p, #earlier-work p {
     background-color: var(--quaternary-color);
     padding: 5px 5px;
@@ -159,80 +160,86 @@ header nav ul li a:hover {
     position: relative;
     width: 100%;
 }
-
+ 
 #latest-work img {
     width: 100%;
     height: auto;
     padding: 5px 5px;
 }
-
+ 
 .work-examples img {
     filter: brightness(50%);
 }
-
+ 
 .work-examples img:hover {
     box-shadow: 0 0 11px #60adc9;
     filter: brightness(100%);
 }
-
+ 
 #earlier-work {
     display: flex;
     flex-wrap: wrap;
 }
-
-
+ 
+ 
 .earlier-work-item {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    max-width: 50%;
     position: relative;
 }
-
+ 
 #earlier-work img {
     width: 100%;
     padding: 5px 5px;
     min-height: 100%;
 }
-
+ 
 #contact-me {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 15px 40px 15px;
 }
-
 #contact-links {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0px 30px;
+    width: 100%;
 }
-
-#contact-links ul {
-    padding: 5px;
+ 
+#contact-me ul {
+    width: 100%;
 }
-
+ 
 #contact-links ul li {
     list-style: none;
     line-height: 2;
 }
+
+.subheadings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+}
+
 /*end main content*/
-
-
+ 
+ 
 /*footer*/
-
+footer {
+    display: flex;
+    border-top: 2px solid hsl(202, 67%, 34%);
+    padding: 10px;
+    justify-content: center;
+}
 /*end footer*/
-
-@media screen and (min-width: 1366px) {
-
-body p {
-    font-size: 15px;
-}
-
-}
-
+ 
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALL*/
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
     }
-
+ 
     header h1 {
         width: 100%;
         text-align: center;
@@ -243,13 +250,46 @@ body p {
         width: 100%;
         justify-content: center;
     }
-
+ 
     header nav ul li a {
         font-size: 20px;
     }
 
-    footer h4 {
-        text-align: center;
+    .main-content h2 {
+        font-size: 5vw;
+    }
+
+ 
+}
+ 
+ 
+@media screen and (max-width: 575px) {
+    header {
+        position: relative;
+    }
+ 
+    #about-me {
+        flex-wrap: column;
+        justify-content: center;
+    }
+ 
+   .earlier-work-item {
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    .work-examples {
+        width: 100%;
+        flex-wrap: column;
+    }
+ 
+    #contact-me {
         width: 100%;
     }
+ 
+    .main-content h2 {
+        font-size: 5vw;
+    }
 }
+ 
+
