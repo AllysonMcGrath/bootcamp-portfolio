@@ -35,6 +35,7 @@ header h1 {
     font-size: 36px;
     color: var(--quinary-color);
     background-color: var(--tertiary-color);
+    padding: 0px 10px;
 
 }
 
@@ -72,7 +73,23 @@ header nav ul li a:hover {
 
 
 /*hero*/
+#hero {
+    background-image: url("../images/hero3.png");
+    height: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 
+}
+
+#hero-text {
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
 /*end hero*/
 
 
@@ -124,16 +141,17 @@ header nav ul li a:hover {
     padding: 0px 30px;
 }
 
-#latest-work p {
+#latest-work p, #earlier-work p {
     background-color: var(--quaternary-color);
     padding: 5px 5px;
-    width: 25%;
+    width: auto;
     padding: 5px;
     text-align: center;
     align-self: flex-end;
     position: absolute;
     bottom: 30px;
     left: 5px;
+    font-size: 2vw;
 }
 #latest-work {
     display: flex;
@@ -162,28 +180,37 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-#earlier-work p {
-    background-color: var(--quaternary-color);
-    padding: 5px 5px;
-    width: 25%;
-    padding: 5px;
-    text-align: center;
-    align-self: flex-end;
-    position: absolute;
-    bottom: 30px;
-    left: 5px;
-}
 
 .earlier-work-item {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    max-width: 50%;
     position: relative;
 }
 
 #earlier-work img {
     width: 100%;
     padding: 5px 5px;
+    min-height: 100%;
+}
+
+#contact-me {
+    display: flex;
+    padding: 10px 20px;
+}
+
+#contact-links {
+    padding: 0px 30px;
+}
+
+#contact-links ul {
+    padding: 5px;
+}
+
+#contact-links ul li {
+    list-style: none;
+    line-height: 2;
 }
 /*end main content*/
 
@@ -191,3 +218,38 @@ header nav ul li a:hover {
 /*footer*/
 
 /*end footer*/
+
+@media screen and (min-width: 1366px) {
+
+body p {
+    font-size: 15px;
+}
+
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+       
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h4 {
+        text-align: center;
+        width: 100%;
+    }
+}
