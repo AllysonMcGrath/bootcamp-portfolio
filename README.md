@@ -1,4 +1,4 @@
-# Code Refactor Starter Code
+# HTML/CSS-Portfolio Website
 
 ## Description
 
@@ -28,7 +28,7 @@ When displaying correctly, website should look like the image below:
 
 ![McGrath portfolio website](assets/images/mockup.JPG)
 
-You can find the deployed site [here.]()
+You can find the deployed site [here.](https://allysonmcgrath.github.io/cbcchallenge2/)
 
 
 
