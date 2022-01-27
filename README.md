@@ -16,7 +16,7 @@ The last part was adding media queries to make the page responsive for different
 
 To install this project, you can clone the repository by using the command prompt
 
-$ git clone https://github.com/AllysonMcGrath/cbcchallenge2.git
+$ git clone https://github.com/AllysonMcGrath/bootcamp-portfolio.git
 
 Detailed instructions for cloning GitHub repositories can be found [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
@@ -28,7 +28,7 @@ When displaying correctly, website should look like the image below:
 
 ![McGrath portfolio website](assets/images/mockup.JPG)
 
-You can find the deployed site [here.](https://allysonmcgrath.github.io/cbcchallenge2/)
+You can find the deployed site [here.](https://allysonmcgrath.github.io/bootcamp-portfolio/)
 
 
 
